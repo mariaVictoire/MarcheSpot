@@ -1,9 +1,9 @@
 name: Test récupération des données RTE
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: "*/1 * * * *"  # Exécution toutes les minutes (à des fins de test)
+  workflow_dispatch:  # Permet le déclenchement manuel (garde cette option)
 
 jobs:
   fetch-data:
