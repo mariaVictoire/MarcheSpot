@@ -1,13 +1,13 @@
-name: Test récupération des données RTE
+name: Automatisation récupération des données RTE
 
 on:
-  schedule:
-    - cron: "*/1 * * * *"  # Exécution toutes les minutes (à des fins de test)
-  workflow_dispatch:  # Permet le déclenchement manuel (garde cette option)
+  push: 
+  schedule:  
+    - cron: "10 13 * * *"  # Exécution quotidienne à 13h10 UTC (14h10 heure française)
 
 jobs:
   fetch-data:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04  
 
     steps:
       - name: Checkout repository
