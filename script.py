@@ -9,7 +9,7 @@ import pandas as pd
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 TOKEN_URL = "https://digital.iservices.rte-france.com/token/oauth"
-DATA_URL = "https://digital.iservices.rte-france.com/open_api/wholesale_market/v2/france_power_exchanges"
+DATA_URL = "https://digital.iservices.rte-france.com/open_api/wholesale_market/v3/france_power_exchanges"
 CSV_FILE = "marche_spot.csv"
 
 def get_token(client_id, client_secret):
