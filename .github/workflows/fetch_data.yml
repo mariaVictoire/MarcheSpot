@@ -25,7 +25,7 @@ jobs:
         env:
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-        run: python script.py
+        run: python fetch_spot_rte.py
 
       - name: Commit and push updated CSV
         run: |
